@@ -3,9 +3,12 @@
   <div class="container">
     <section-one :desc="description" />
     <section-two :desc="description">
-      <div class="col col-lg-6 col-md-12 col-sm-12" v-for="i in 3" :key="i">
-        <rank-anime />
-      </div>
+      <Suspense>
+        <template #default>
+          <rank-anime />
+        </template>
+        <template #fallback>loading...</template>
+      </Suspense>
     </section-two>
   </div>
 </template>
@@ -15,7 +18,7 @@ import { defineComponent, ref } from 'vue';
 import Navbar from '@/components/navbar/Navbar.vue';
 import SectionOne from '@/components/section/SectionOne.vue';
 import SectionTwo from '@/components/section/SectionTwo.vue';
-import RankAnime from '@/components/card/RankAnime.vue';
+import RankAnime from '@/components/RankAnime.vue';
 
 export default defineComponent({
   name: 'App',
