@@ -1,8 +1,11 @@
-<h1 align="center">Anisearch 🔎</h1>
+<div align="center">
+    <h1>Anisearch 🔎</h1>
 
 [![Issue](https://img.shields.io/github/issues/satyawikananda/anisearch)](https://img.shields.io/github/issues/satyawikananda/anisearch)
 [![Forks](https://img.shields.io/github/forks/satyawikananda/anisearch)](https://img.shields.io/github/forks/satyawikananda/anisearch)
 [![Stars](https://img.shields.io/github/stars/satyawikananda/anisearch)](https://img.shields.io/github/stars/satyawikananda/anisearch)
+
+</div>
 
 # Description 😎
 
