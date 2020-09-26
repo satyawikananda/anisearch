@@ -1,12 +1,12 @@
 /* eslint-disable */
-import { AxiosRequestConfig } from 'axios';
+import { AxiosRequestConfig } from "axios";
 
-const BASE_URL: string = 'https://graphql.anilist.co';
+const BASE_URL: string = "https://graphql.anilist.co";
 
-export default function axiosConfig(anime: string, query: any) {
+export default function axiosConfig(anime: string | string[], query: any) {
   const config: AxiosRequestConfig = {
-    method: 'POST',
-    url: 'https://graphql.anilist.co',
+    method: "POST",
+    url: "https://graphql.anilist.co",
     data: {
       variables: {
         anime: anime,

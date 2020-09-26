@@ -19,9 +19,27 @@ body {
   max-width: 980px;
 }
 
+.btn-fab {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  background-color: #e64a19;
+  border-color: #e64a19;
+
+  &:hover {
+    background-color: #e03f0e;
+    border-color: #e03f0e;
+  }
+}
+
 .section-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.footer {
+  background-color: #fff;
 }

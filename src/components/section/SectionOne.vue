@@ -1,11 +1,12 @@
 <template>
   <section class="mt-5 pb-5">
     <div class="row">
-      <div class="col col-sm-12 col-md-12 col-lg-6 m-auto">
+      <div class="col-sm-12 col-md-12 col-lg-6 m-auto">
         <h1 class="display-4">
           <div :style="{ color: '#E64A19', display: 'inline' }">Ani</div>
           Search
-          <p class="fa fa-search" :style="{ color: '#E64A19' }"></p>
+          <!-- eslint-disable-next-line max-len -->
+          <img src="../../assets/images/iconAnisearch.png" alt="logo-anisearch" width="70" height="70" />
         </h1>
         <p class="lead text-left">
           {{ desc }}
@@ -28,7 +29,7 @@
           </a>
         </div>
       </div>
-      <div class="col col-sm-12 col-md-12 col-lg-6">
+      <div class="col-sm-12 col-md-12 col-lg-6">
         <img src="../../assets/images/hero.svg" alt="hero" class="img-fluid m-auto" />
       </div>
     </div>
@@ -39,6 +40,6 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'heroSection',
-  props: ['desc'],
+  props: ['desc', 'github'],
 });
 </script>
