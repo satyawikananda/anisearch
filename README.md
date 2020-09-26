@@ -7,13 +7,13 @@
 
 </div>
 
-# Description 😎
+## Description 😎
 
 Anisearch is a website application that purpose to search your favorite anime and also in this website you can see top 10 anime
 
 > To be honest, this project i made for to try Vue.JS version 3 with Typescript
 
-# Tech stack 💻
+## Tech stack 💻
 
 For the tech stack, i am using:
 
@@ -23,14 +23,14 @@ For the tech stack, i am using:
 - [Axios](https://github.com/axios/axios)
 - [Vercel](https://vercel.com)
 
-# Source data 📝
+## Source data 📝
 
 For the data, i used Jikan API and Anilist graphQL
 
 - [Jikan API](https://jikan.moe)
 - [Anilist graphQL](https://anilist.gitbook.io/anilist-apiv2-docs/overview/graphql/getting-started)
 
-# What have i learned? 🤔
+## What have i learned? 🤔
 
 - Vue.JS 3 include composition API
 - Using typescript in Vue.JS project
