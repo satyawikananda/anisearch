@@ -31,7 +31,7 @@
         <div class="row">
           <!-- eslint-disable-next-line max-len -->
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5" v-for="data in search.anime.animes" :key="data.id">
-            <a :href="data.idMal ? 'https://myanimelist.net/anime/' + data.idMal : '#'">
+            <a :href="data.idMal ? 'https://myanimelist.net/anime/' + data.idMal : '#'" target="_blank">
               <div class="card w-100 shadow">
                 <!-- test -->
                 <!-- eslint-disable-next-line max-len -->
