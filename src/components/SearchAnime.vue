@@ -31,62 +31,64 @@
         <div class="row">
           <!-- eslint-disable-next-line max-len -->
           <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5" v-for="data in search.anime.animes" :key="data.id">
-            <div class="card w-100 shadow">
-              <!-- test -->
-              <!-- eslint-disable-next-line max-len -->
-              <img :src="data.coverImage.large" :alt="data.title.romaji" class="p-2 h-75" :style="{ objectFit: 'cover' }" />
-              <div class="card-body">
-                <div class="card-title">
-                  <h6 class="font-weight-bold" :style="{ color: '#E64A19' }">
-                    {{ data.title.romaji }}
-                  </h6>
+            <a :href="data.idMal ? 'https://myanimelist.net/anime/' + data.idMal : '#'" :target="'_blank'">
+              <div class="card w-100 shadow">
+                <!-- test -->
+                <!-- eslint-disable-next-line max-len -->
+                <img :src="data.coverImage.large" :alt="data.title.romaji" class="p-2 h-75" :style="{ objectFit: 'cover' }" />
+                <div class="card-body">
+                  <div class="card-title">
+                    <h6 class="font-weight-bold" :style="{ color: '#E64A19' }">
+                      {{ data.title.romaji }}
+                    </h6>
+                  </div>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <p :style="{ color: '#E64A19' }" class="m-auto">
+                        Season:
+                        <span class="font-weight-bold">
+                          {{ data.season == null ? 'N/a' : data.season }}
+                        </span>
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p :style="{ color: '#E64A19' }" class="m-auto">
+                        Episodes:
+                        <span class="font-weight-bold">
+                          {{ data.episodes == null ? 'N/a' : data.episodes }}
+                        </span>
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p :style="{ color: '#E64A19' }" class="m-auto">
+                        Genres:
+                        <span class="font-weight-bold">{{ handleComma(data.genres) }}</span>
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p :style="{ color: '#E64A19' }" class="m-auto">
+                        Popularity:
+                        <span class="font-weight-bold">{{ data.popularity }}</span>
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p :style="{ color: '#E64A19' }" class="m-auto">
+                        Trending:
+                        <span class="font-weight-bold">{{ data.trending }}</span>
+                      </p>
+                    </li>
+                    <li class="list-group-item">
+                      <p :style="{ color: '#E64A19' }" class="m-auto">
+                        Favourite:
+                        <!-- eslint-disable-next-line max-len -->
+                        <span class="font-weight-bold"> {{ data.favourites }}</span>
+                        people's like this anime
+                      </p>
+                    </li>
+                  </ul>
                 </div>
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <p :style="{ color: '#E64A19' }" class="m-auto">
-                      Season:
-                      <span class="font-weight-bold">
-                        {{ data.season == null ? 'N/a' : data.season }}
-                      </span>
-                    </p>
-                  </li>
-                  <li class="list-group-item">
-                    <p :style="{ color: '#E64A19' }" class="m-auto">
-                      Episodes:
-                      <span class="font-weight-bold">
-                        {{ data.episodes == null ? 'N/a' : data.episodes }}
-                      </span>
-                    </p>
-                  </li>
-                  <li class="list-group-item">
-                    <p :style="{ color: '#E64A19' }" class="m-auto">
-                      Genres:
-                      <span class="font-weight-bold">{{ handleComma(data.genres) }}</span>
-                    </p>
-                  </li>
-                  <li class="list-group-item">
-                    <p :style="{ color: '#E64A19' }" class="m-auto">
-                      Popularity:
-                      <span class="font-weight-bold">{{ data.popularity }}</span>
-                    </p>
-                  </li>
-                  <li class="list-group-item">
-                    <p :style="{ color: '#E64A19' }" class="m-auto">
-                      Trending:
-                      <span class="font-weight-bold">{{ data.trending }}</span>
-                    </p>
-                  </li>
-                  <li class="list-group-item">
-                    <p :style="{ color: '#E64A19' }" class="m-auto">
-                      Favourite:
-                      <!-- eslint-disable-next-line max-len -->
-                      <span class="font-weight-bold"> {{ data.favourites }}</span>
-                      people's like this anime
-                    </p>
-                  </li>
-                </ul>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
