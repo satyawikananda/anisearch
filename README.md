@@ -1,11 +1,4 @@
-<div align="center">
-    <h1>Anisearch 🔎</h1>
-
-[![Issue](https://img.shields.io/github/issues/satyawikananda/anisearch)](https://img.shields.io/github/issues/satyawikananda/anisearch)
-[![Forks](https://img.shields.io/github/forks/satyawikananda/anisearch)](https://img.shields.io/github/forks/satyawikananda/anisearch)
-[![Stars](https://img.shields.io/github/stars/satyawikananda/anisearch)](https://img.shields.io/github/stars/satyawikananda/anisearch)
-
-</div>
+![anisearch](https://socialify.git.ci/satyawikananda/anisearch/image?description=1&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FElNBSI0XYAMLDlT%3Fformat%3Djpg%26name%3D900x900&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Light)
 
 ## Description 😎
 
